@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Portal Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="login-body">
+    <div class="login-wrapper">
+      <div class="login-card">
+        <div class="brand-box">
+          <h1>RentalHub</h1>
+          <p>Find your next place or manage your rentals with ease.</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <div class="role-selector">
+            <button type="button" class="role-option active" data-role="lender">
+              <span>🏠</span>
+              <span>Lender</span>
+            </button>
+            <button type="button" class="role-option" data-role="renter">
+              <span>🔑</span>
+              <span>Renter</span>
+            </button>
+          </div>
+
+          <input type="hidden" id="roleInput" value="lender" />
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter password" required />
+
+          <button type="submit" class="primary-btn">Login</button>
+          <p id="loginMessage" class="message" aria-live="polite"></p>
+
+          <div class="demo-box">
+            <p><strong>Demo accounts:</strong></p>
+            <p>Lender: lender@demo.com / 123456</p>
+            <p>Renter: renter@demo.com / 123456</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

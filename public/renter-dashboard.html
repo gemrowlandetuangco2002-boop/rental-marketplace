@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renter Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="sidebar">
+      <div class="brand-header">
+        <h2>RentalHub</h2>
+      </div>
+      <nav class="nav-links">
+        <button class="nav-item active">Browse rentals</button>
+        <button class="nav-item">My reservations</button>
+        <button class="nav-item">Favorites</button>
+        <button class="nav-item">Messages</button>
+        <button class="nav-item">Profile</button>
+      </nav>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Renter dashboard</p>
+          <h1 id="welcomeText">Welcome</h1>
+        </div>
+      </header>
+
+      <section class="dashboard-section active" id="section-browse-rentals">
+        <div class="section-header">
+          <h3>Browse rentals</h3>
+        </div>
+        <div id="browseGrid" class="card-grid"></div>
+      </section>
+
+      <section class="dashboard-section" id="section-my-reservations">
+        <div class="section-header">
+          <h3>My reservations</h3>
+        </div>
+        <div id="reservationGrid" class="card-grid"></div>
+      </section>
+
+      <section class="dashboard-section" id="section-favorites">
+        <div class="section-header">
+          <h3>Favorites</h3>
+        </div>
+        <div id="favoriteGrid" class="card-grid"></div>
+      </section>
+
+      <section class="dashboard-section" id="section-messages">
+        <div class="section-header">
+          <h3>Messages</h3>
+        </div>
+        <div id="messageList" class="message-list"></div>
+      </section>
+
+      <section class="dashboard-section" id="section-profile">
+        <div class="section-header">
+          <h3>Profile</h3>
+        </div>
+        <div class="info-panel profile-card">
+          <h4 id="profileName">Renter Name</h4>
+          <p id="profileRole">Role: Renter</p>
+          <p>Email: renter@demo.com</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

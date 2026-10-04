@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lender Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-body">
+    <aside class="sidebar">
+      <div class="brand-header">
+        <h2>RentalHub</h2>
+      </div>
+      <nav class="nav-links">
+        <button class="nav-item active">My listings</button>
+        <button class="nav-item">Rentals</button>
+        <button class="nav-item">Rental policies & terms</button>
+        <button class="nav-item">Messages</button>
+        <button class="nav-item">Profile</button>
+      </nav>
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Lender dashboard</p>
+          <h1 id="welcomeText">Welcome</h1>
+        </div>
+      </header>
+
+      <section class="dashboard-section active" id="section-my-listings">
+        <div class="section-header">
+          <h3>My listings</h3>
+          <button class="primary-btn small">Add listing</button>
+        </div>
+        <div id="listingGrid" class="card-grid"></div>
+      </section>
+
+      <section class="dashboard-section" id="section-rentals">
+        <div class="section-header">
+          <h3>Rentals</h3>
+        </div>
+        <div id="rentalGrid" class="card-grid"></div>
+      </section>
+
+      <section class="dashboard-section" id="section-policies">
+        <div class="section-header">
+          <h3>Rental policies & terms</h3>
+        </div>
+        <div class="info-panel">
+          <ul>
+            <li>Security deposit is due before move-in.</li>
+            <li>Late rent is charged at 5% after the 5th day.</li>
+            <li>Maintenance requests must be submitted within 48 hours.</li>
+            <li>Standard rental agreement applies to all properties.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="dashboard-section" id="section-messages">
+        <div class="section-header">
+          <h3>Messages</h3>
+        </div>
+        <div id="messageList" class="message-list"></div>
+      </section>
+
+      <section class="dashboard-section" id="section-profile">
+        <div class="section-header">
+          <h3>Profile</h3>
+        </div>
+        <div class="info-panel profile-card">
+          <h4 id="profileName">Lender Name</h4>
+          <p id="profileRole">Role: Lender</p>
+          <p>Email: lender@demo.com</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
